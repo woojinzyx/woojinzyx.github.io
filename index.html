@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  
+  <link rel="canonical" href="https://woojinzyx.github.io/">
+  
+
+  
+  <title>Woojin</title>
+  <meta property="og:title" content="Woojin">
+
+  
+  
+  <meta name="description" content="woojin&#x27;s personal website">
+  <meta property="og:description" content="woojin&#x27;s personal website">
+  
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="woojin">
+
+  <link rel="icon" type="image/svg+xml" href="/8831/icon.svg">
+
+  <link rel="preconnect" href="https://rsms.me">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/style.css?16650">
+  
+  <style>
+    html, body {
+      background-color: #121730;
+      color: white;
+      overflow-x: hidden;
+    }
+    
+    body {
+      height: auto;
+      min-height: 80vh;
+    }
+    
+    @media (min-width: 768px) {
+      body {
+        transform: scale(1.25);
+        transform-origin: top center;
+      }
+    }
+    
+    header > a {
+      position: relative;
+      display: inline-block;
+    }
+    
+    header > a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: -2px;
+      width: 105%;
+      height: 2px;
+      background-color: #dc2626;
+      border-radius: 50% 40% 50% 60%;
+      transform: rotate(-0.5deg);
+    }
+    
+    /* Hand-drawn double circle effect for active nav items */
+    #navbar .active::before,
+    #navbar .active::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border: 2px solid #dc2626;
+      pointer-events: none;
+      z-index: -1;
+    }
+    /* First circle */
+    #navbar .active::after {
+      transform: translate(-50%, -50%) rotate(-3deg);
+      width: 120%;
+      height: 140%;
+      border-radius: 48% 52% 50% 50% / 52% 48% 55% 45%;
+      opacity: 0.5;
+    }
+    /* Second circle - overlapping */
+    #navbar .active::before {
+      transform: translate(-50%, -50%) rotate(2deg);
+      width: 124%;
+      height: 145%;
+      border-radius: 45% 55% 52% 48% / 48% 58% 42% 52%;
+      opacity: 0.8;
+    }
+    
+    /* Shift woojin and main content to the right on desktop */
+    @media (min-width: 768px) {
+      header > a:first-child {
+        margin-left: 2rem;
+      }
+      
+      main {
+        padding-left: 2rem;
+      }
+    }
+    
+    .sticky-note {
+      background: linear-gradient(135deg, #fef6b8 0%, #fef08a 100%);
+      color: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 3px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08);
+      position: relative;
+      transform: rotate(-2deg);
+      width: 200px;
+      margin: 0 auto;
+    }
+    
+    @media (min-width: 768px) {
+      .sticky-note {
+        margin-left: 200px;
+        margin-right: 0;
+      }
+    }
+    
+    .sticky-note::before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 20px;
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 2px;
+    }
+    
+    .sticky-note h3 {
+      font-family: 'Segoe Print', 'Comic Sans MS', cursive;
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+      color: #2d2d2d;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding-bottom: 0.5rem;
+    }
+    
+    .sticky-note a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #1a1a1a;
+      text-decoration: none;
+      padding: 0.35rem 0;
+      font-size: 0.85rem;
+      transition: transform 0.2s;
+    }
+    
+    .sticky-note a:hover {
+      transform: translateX(3px);
+    }
+    
+    .sticky-note i {
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+
+<body class="overflow-y-scroll flex flex-col p-4 pt-8 md:p-8 md:pt-16">
+  <div class="w-full max-w-[622px] flex-1 mx-auto flex flex-col gap-8">
+    
+    <header class="flex flex-col md:flex-row gap-2 md:gap-4 md:justify-between items-center">
+      <a href="/" style="color: #777eab; font-weight: 450;">woojin</a>
+
+      <nav id="navbar" class="flex gap-4 items-stretch">
+        
+
+
+
+<p class="first:hidden text-gray-400 select-none">⁄</p>
+<div class="relative active">
+  <span class="invisible">about</span>
+  <a href="https:&#x2F;&#x2F;woojinzyx.github.io&#x2F;" style="color: #777eab;"
+    class="absolute inset-0 text-center  !text-white ">
+    about
+  </a>
+</div>
+
+
+        
+
+
+
+<p class="first:hidden text-gray-400 select-none">⁄</p>
+<div class="relative ">
+  <span class="invisible">projects</span>
+  <a href="https:&#x2F;&#x2F;woojinzyx.github.io&#x2F;projects&#x2F;" style="color: #777eab;"
+    class="absolute inset-0 text-center ">
+    projects
+  </a>
+</div>
+
+
+      </nav>
+    </header>
+
+    <main class="flex-1 flex flex-col gap-4 md:gap-8">
+      
+
+<div class="prose">
+  <p>I'm an undergrad at the University of California, Berkeley studying computer science and math. My story is still compiling. Check back in a few decades?</p>
+
+</div>
+
+<div class="flex flex-wrap gap-[1px]">
+  <!-- //* 
+<a href="https:&#x2F;&#x2F;eightyeightthirty.one&#x2F;">
+  <img class="[image-rendering:pixelated]" src="/8831/8831.png" width="88" height="31" alt="88x31 button 8831.png" />
+</a>
+ -->
+</div>
+
+
+      
+      <div class="sticky-note">
+        <h3>Find me:</h3>
+        <a href="mailto:woojin@berkeley.edu">
+          <i class="bi bi-envelope-fill"></i>
+          <span>me</span>
+        </a>
+        <a href="https://github.com/woojinzyx" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+          <span>me</span>
+        </a>
+        <a href="https://signal.org" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-signal"></i>
+          <span>me</span>
+        </a>
+      </div>
+    </main>
+    
+  </div>
+</body>
+</html>

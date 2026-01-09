@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /resume
+Allow: /
+Sitemap: https://woojinzyx.github.io/sitemap.xml
